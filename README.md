@@ -8,4 +8,4 @@
 
 # Built in Lavarel - >
 # frontend - react.js
-# backend - PHP - (all calculations in the backend)
+# backend - PHP - (all calculations are in the backend)
