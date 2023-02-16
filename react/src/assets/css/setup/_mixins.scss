@@ -1,0 +1,18 @@
+/* layout*/
+
+@mixin for-layout-normal {
+    @media (min-width: $break-normal) {
+      @content;
+    }
+  }
+  @mixin for-layout-wide {
+    @media (min-width: $break-wide) {
+      @content;
+    }
+  }
+  @mixin for-layout-extra-wide {
+    @media (min-width: $break-extra-wide) {
+      @content;
+    }
+  }
+  

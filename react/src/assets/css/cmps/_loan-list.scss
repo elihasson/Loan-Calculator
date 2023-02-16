@@ -1,0 +1,58 @@
+.loan-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    align-items: stretch;
+    .loan-specs {
+        border: 1px solid $clr7;
+        border-radius: 0.2rem;
+        letter-spacing: 0.8px;
+        margin-bottom: 5px;
+
+        thead {
+            background-color: $clr8;
+            color: $clr2;
+        }
+
+        tr {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            
+            td {
+                border: 1px solid $clr7;
+                text-align: center;
+            }
+        }
+    }
+
+    .payment-table {
+        border: 1px solid $clr7;
+        border-radius: 0.2rem;       
+        letter-spacing: 0.8px;
+        thead {
+            background-color: $clr8;
+            color: $clr2;
+        }
+
+        tr {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+            td {
+                border: 1px solid $clr7;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: $clr2;
+    letter-spacing: 0.8px;
+}

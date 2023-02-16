@@ -1,0 +1,202 @@
+// Font Sizes
+.fs12 {
+    font-size: rem(12px);
+}
+
+.fs14 {
+    font-size: rem(14px);
+}
+
+.fs18 {
+    font-size: rem(18px);
+}
+
+.fs20 {
+    font-size: rem(20px);
+}
+
+.fs24 {
+    font-size: rem(24px);
+}
+
+.fs28 {
+    font-size: rem(28px);
+}
+
+.fs30 {
+    font-size: rem(30px);
+}
+
+// flex helpers
+
+.flex {
+
+    display: flex;
+
+    >*.full {
+        flex: 1;
+    }
+
+    &.column {
+        flex-direction: column;
+    }
+
+    &.row {
+        flex-direction: row;
+    }
+
+    &.justify-center {
+        justify-content: center;
+    }
+
+    &.align-center {
+        align-items: center;
+    }
+}
+
+.full-height {
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+}
+
+// Media helpers
+
+// .square-ratio {
+//     @include aspect-ratio(1, 1);
+// }
+
+// .video-ratio {
+//     @include aspect-ratio(16, 9);
+// }
+
+// .portrait-ratio {
+//     @include aspect-ratio(9, 16);
+// }
+
+.debug {
+    border: 2px solid gold;
+}
+
+.clean-link {
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+}
+
+.clean-list {
+    list-style: none;
+    list-style-image: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.equal-padding {
+    padding: 0 $layoutPadding;
+}
+
+.hovertext {
+    position: relative;
+
+    &:before {
+        content: attr(data-hover);
+        visibility: hidden;
+        opacity: 0;
+        width: 140px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px 0;
+        transition: opacity 1s ease-in-out;
+
+        position: absolute;
+        z-index: 1;
+        left: -300%;
+        top: 110%;
+    }
+
+    &:hover:before {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.btn {
+    cursor: pointer;
+    background-color: $clr1;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 0.8em 0.8em;
+    transition: 0.1s;
+
+    &:hover {
+        background-color: darken($clr1, 5%);
+    }
+
+    &:active {
+        background-color: darken($clr1, 10%);
+    }
+
+    &.white{
+        background-color: white;
+        color: $clr1;
+        border: solid 1px;
+        border-color: $clr1 ;
+    }
+}
+
+.btn-red {
+    cursor: pointer;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 0.8em 0.8em;
+    transition: 0.1s;
+
+    &:hover {
+        background-color: darken(red, 5%);
+    }
+
+    &:active {
+        background-color: darken(red, 10%);
+    }
+}
+
+.btn-gray {
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid transparent;
+    font-weight: 600;
+    line-height: 100%;
+    border-color:  #62646a;
+    color: #62646a;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 0.8em 0.8em;
+    transition: 0.1s;
+
+    &:hover {
+        background-color: #62646a;
+        color:#fff;
+    }
+
+    &:active {
+        background-color: darken(#62646a, 10%);
+        color: #fff;
+    }
+
+}
+
+

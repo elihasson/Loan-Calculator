@@ -1,0 +1,48 @@
+.mortgage-plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: $clr10;
+    // font-size: 0.8rem;
+
+    .plan-edit-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin-bottom: 5px;
+
+        input {
+            outline: none;
+            height: 22px;
+            border: 1px solid $clr7;
+            border-radius: 0.2rem;
+            gap: 0.7rem;
+            text-transform: capitalize;
+            margin-bottom: 5px;
+            padding-left: 2px;
+            cursor: pointer;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+  
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        select {
+            outline: none;
+            height: 22px;
+            border: 1px solid $clr7;
+            border-radius: 0.2rem;
+            gap: 0.7rem;
+            text-transform: capitalize;
+            margin-bottom: 5px;
+            padding-left: 2px;
+            cursor: pointer;
+        }
+    }
+}

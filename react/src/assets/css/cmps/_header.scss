@@ -1,0 +1,16 @@
+.header{
+    color: $clr2;
+    font-size: 1.6rem;
+    align-items: center;
+    text-align: center;
+    padding: 1.2rem;
+    border-radius: 0 0 18px 18px ;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
+    background-color: $clr8;
+    &:hover {
+        background-color: $clr9;
+        box-shadow:  4px 0 22px rgb(31 1 71 / 12%);
+        transition: background-color 80ms 0ms,box-shadow .1s 0ms;    
+    }
+}

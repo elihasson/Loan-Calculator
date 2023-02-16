@@ -1,0 +1,36 @@
+.main-layout {
+
+    display: grid;
+    grid-template-columns: 
+    minmax($layoutPadding, 1fr)
+    minmax(auto, 1400px)
+    minmax($layoutPadding, 1fr)
+    ;
+    >*:not(.full) {
+        grid-column: 2;
+    }
+    >*.full {
+        grid-column: 1 / -1;
+    }
+
+    @include for-layout-normal {
+        grid-template-columns: 
+    minmax(($layoutPadding * 2), 1fr)
+    minmax(auto, 1400px)
+    minmax(($layoutPadding * 2), 1fr);
+    } 
+    @include for-layout-wide {
+        grid-template-columns: 
+    minmax(($layoutPadding * 4), 1fr)
+    minmax(auto, 1400px)
+    minmax(($layoutPadding * 4), 1fr);
+    } 
+    @include for-layout-extra-wide {
+        grid-template-columns: 
+    minmax(($layoutPadding * 6), 1fr)
+    minmax(auto, 1400px)
+    minmax(($layoutPadding * 6), 1fr);
+    } 
+}
+
+
